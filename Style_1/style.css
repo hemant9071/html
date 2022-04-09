@@ -1,0 +1,496 @@
+﻿@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regulard41d.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+body {
+    font-family: Calibri, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.body-bg {
+    background-color: #00853f;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+    font-weight: 300;
+    font-family: Calibri, sans-serif;
+}
+
+
+.heading {
+    font: 60px 'Times New Roman';
+    font-weight: bold;
+    text-align: center;
+    color: #FFF;
+    margin: 0;
+    margin-top: 75px;
+}
+
+.sub-heading {
+    font: 25px Pristina;
+    text-align: center;
+    background-color: #00853f;
+    color: #FFF;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+
+.address {
+    color: #bfdac6;
+    padding: 5px;
+    font-size: medium;
+    text-align: center;
+}
+
+.contactInfo {
+    color: #FFF;
+    padding: 5px;
+    font-size: medium;
+    width: auto;
+    position: relative;
+    /*margin-left: -250px;*/ /* Half of width */
+    /*left: 50%;*/
+    text-align: center;
+}
+
+
+.phone ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+    .phone ul li {
+        display: inline;
+        margin: 5px;
+        color: #bfdac6;
+    }
+
+/*TABS*/
+
+.tabsContainer {
+    width: 520px;
+    height: 125px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -260px; /* Half of width */
+    margin-top: 50px; /* Half of height */
+    margin-bottom: 50px;
+    color: #00853f;
+    font-size: 38px;
+    vertical-align: middle;
+    line-height: 110px;
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+}
+
+
+.eduTab {
+    float: left;
+    width: 250px;
+    background: #bfdac6;
+    height: 100%;
+    margin: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    background: -webkit-radial-gradient(#FFF, #bfdac6, #73c49a);
+    background: -moz-radial-gradient(#FFF, #bfdac6, #73c49a);
+    background: -o-radial-gradient(#FFF, #bfdac6, #73c49a);
+    background: radial-gradient(#FFF, #bfdac6, #73c49a);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+
+.srvTab {
+    float: right;
+    width: 250px;
+    height: 100%;
+    background: #73c49a;
+    margin: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    background: -webkit-radial-gradient(#FFF, #bfdac6, #73c49a);
+    background: -moz-radial-gradient(#FFF, #bfdac6, #73c49a);
+    background: -o-radial-gradient(#FFF, #bfdac6, #73c49a);
+    background: radial-gradient(#FFF, #bfdac6, #73c49a);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+    .eduTab:hover,
+    .srvTab:hover {
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        transform: scale(1.05);
+        opacity: 1;
+    }
+
+
+/********************
+        COURSES
+**********************/
+.header {
+    width: 100%;
+    color: #FFF;
+    background-color: #00853f;
+    padding: 10px;
+    box-shadow: 0 0 5px #777;
+}
+
+.brand {
+    font: 40px/40px 'Times New Roman';
+    font-weight: bold;
+    width: 400px;
+    float: left;
+}
+
+.pageHeading h1 {
+    float: right;
+    color: #FFF;
+}
+
+#courseContainer {
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding-bottom: 30px;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+#myCarousel {
+    margin-top: 15px;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #bfdac6;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #00853f;
+}
+
+/*HEADINGS*/
+h2 {
+    color: #00853f;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    color: #999;
+    margin: 0;
+}
+
+
+.separator {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 1px;
+    width: 100%;
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background: linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+.promo-block {
+    display: table;
+    margin: auto;
+    width: 100%;
+    color: #000;
+    text-align: center;
+}
+
+.center-line {
+    width: 7px;
+    height: 7px;
+    margin: auto;
+    border-radius: 50%;
+    background: #00853f;
+    margin-top: -24px;
+    position: relative;
+    z-index: 5;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+
+.tab {
+    padding: 7px;
+    color: #FFF;
+    background-color: #00853f;
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 7px;
+    border-radius: 2px;
+    height: auto;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+    .tab h4 {
+        color: #bfdac6;
+        padding: 0px;
+        font-size: small;
+        text-transform: none;
+        text-align: right;
+    }
+
+    .tab span {
+        color: #FFF;
+        font-size: medium;
+        line-height: normal;
+        margin-right: 10px;
+    }
+
+    .tab::after {
+        content: '';
+        display: block;
+        width: 0%;
+        height: 100%;
+        position: absolute;
+        opacity: 0;
+        left: 0;
+        top: 0;
+        text-align: center;
+        font-size: small;
+        background: url('../Images/eye.html') no-repeat center center #000;
+        border-radius: 2px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    .tab:hover:after {
+        opacity: 0.8;
+        width: 100%;
+    }
+
+
+/*ACCORDION*/
+
+.panel-group .panel {
+    /*border-radius: 2px*/
+}
+
+.panel-default > .panel-heading {
+    background-color: #00853f;
+    border-color: #00853f;
+    color: #FFF;
+    text-align: left;
+}
+
+
+.panel-body {
+    border: solid 1px #00853f;
+}
+
+.panel-group .panel-heading + .panel-collapse .panel-body {
+    border-top-color: #00853f;
+}
+
+.panel-title {
+    text-align: left;
+    font-size: 18px;
+}
+
+    .panel-title a {
+        display: block;
+        margin: 5px 5px;
+    }
+
+        .panel-title a:hover,
+        .panel-title a:active,
+        .panel-title a:focus {
+            text-decoration: none;
+            outline: 0;
+        }
+
+        .panel-title a span {
+            margin-right: 10px;
+            font-size: medium;
+        }
+
+
+.panel-body h3 {
+    color: #00853f;
+    text-align: left;
+    font-weight: 300;
+}
+
+    .panel-body h3 span {
+        font-size: 18px;
+    }
+
+
+/* ==================================================
+   Back to Top
+================================================== */
+
+#back-to-top {
+    display: none;
+    background-color: #00853f;
+    margin: 0;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 35px;
+    width: 35px;
+    border-radius: 3px;
+    z-index: 99;
+    opacity: 0.7;
+    -webkit-transition: opacity 0.3s linear 0s;
+    -moz-transition: opacity 0.3s linear 0s;
+    -o-transition: opacity 0.3s linear 0s;
+    transition: opacity 0.3s linear 0s;
+}
+
+    #back-to-top:hover {
+        opacity: 1;
+    }
+
+    #back-to-top i {
+        font-size: 16px;
+        color: #fff;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -7px;
+        margin-left: -7px;
+        line-height: 1em;
+    }
+
+
+
+/*FOOTER*/
+#footer .container {
+    top: 105%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #444;
+    border-top: 5px solid #00853f;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#footer h1 {
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    color: #fff;
+}
+
+#footer h4 {
+    font-family: Pristina;
+    color: #fff;
+}
+
+#footer p, #footer ul li {
+    color: #fff;
+}
+
+.panel-heading h4 {
+    font-weight: 300;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+    .form-control:focus {
+        box-shadow: none;
+        border-color: #00853f;
+    }
+
+
+.btn-parjain {
+    margin-top:20px;
+    color:#fff;
+    border-radius:2px;
+    background-color:#0e924c;
+    border-color:#00853f;
+}
+
+    .btn-parjain:hover {
+        background-color:#00853f;
+        color:#fff;
+    }
+
+#onlineTraining {
+    /*position:absolute;*/
+    /*position: fixed;*/
+    right: 10px;
+    margin-top:50px;
+}
+
+    #onlineTraining .panel-heading {
+        background-color: #f5f5f5;
+        border-color: #ddd;
+    }
+
+        #onlineTraining .panel-heading h4{
+            font-weight:400;
+        }
+
+    #onlineTraining .panel-body {
+        border-color: #FFF;
+    }
+
+/*FACEBOOK*/
+.fb {
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 2px;
+}
+
+    .fb:hover {
+        background-color: #00853f;
+    }
+.text-parjain {
+    color:#00853f;
+    font-weight:bold;
+}
